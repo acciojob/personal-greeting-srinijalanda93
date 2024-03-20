@@ -29,7 +29,7 @@ import { Component } from "react";
     }
     return <>
     
-        <p>Enter the Name:</p>
+        <p>Enter your name:</p>
         <input id="input" value={this.state.value} onChange={changeEvent} />
         {/* conditional rendering */}
         {this.state.value?<p>Hello {this.state.value}!</p>:null}
