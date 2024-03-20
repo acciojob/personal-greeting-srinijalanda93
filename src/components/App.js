@@ -29,7 +29,7 @@ import { Component } from "react";
     }
     return <>
     
-        <label htmlFor="input">Enter the Name:</label>
+        <p>Enter the Name:</p>
         <input id="input" value={this.state.value} onChange={changeEvent} />
         {/* conditional rendering */}
         {this.state.value?<p>Hello {this.state.value}!</p>:null}
