@@ -16,7 +16,7 @@ import { Component } from "react";
   //constructor for props
   constructor(props) {
     super(props);
-    this.state={value:""};
+    this.state={value:"n"};
   }
   //render to compute the jsx
   render() {
