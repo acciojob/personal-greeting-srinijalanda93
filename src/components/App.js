@@ -28,12 +28,12 @@ import { Component } from "react";
 
     }
     return <>
-    <div>
+    
         <label htmlFor="input">Enter the Name:</label>
         <input id="input" value={this.state.value} onChange={changeEvent} />
         {/* conditional rendering */}
-        {this.state.value?<p>Hello! {this.state.value}</p>:null}
-    </div>
+        {this.state.value?<p>Hello {this.state.value}!</p>:null}
+   
     </>;
   }
 }
