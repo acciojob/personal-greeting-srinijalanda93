@@ -16,7 +16,7 @@ import { Component } from "react";
   //constructor for props
   constructor(props) {
     super(props);
-    this.state={value:"n"};
+    this.state={value:""};
   }
   //render to compute the jsx
   render() {
@@ -27,14 +27,14 @@ import { Component } from "react";
         this.setState({value:newValue});
 
     }
-    return <>
+    return (<>
     
         <p>Enter your name:</p>
         <input id="input" value={this.state.value} onChange={changeEvent} />
         {/* conditional rendering */}
         {this.state.value?<p>Hello {this.state.value}!</p>:null}
    
-    </>;
+    </>);
   }
 }
 
